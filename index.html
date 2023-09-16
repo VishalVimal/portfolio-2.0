@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Vishal</div>
+      <div class="nav-links">
+        <ul>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Experience</a>
+          </li>
+          <li>
+            <a href="#">Projects</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Vishal
+      </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toogleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li>
+            <a href="#" onclick="toogleMenu()">About</a>
+          </li>
+          <li>
+            <a href="#" onclick="toogleMenu()">Experience</a>
+          </li>
+          <li>
+            <a href="#" onclick="toogleMenu()">Projects</a>
+          </li>
+          <li>
+            <a href="#" onclick="toogleMenu()">Contact</a>
+          </li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+          <img src="./Assets/my_img.png" alt="Vishal Profile Picture">
+        </div>
+        <div class="section__text">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title">Vishal</h1>
+          <p class="section__text__p2">Frontend Developer</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('./Assets/resume-example.pdf')">Download CV</button>
+            <button class="btn btn-color-1" onclick="location.href = './#contact'">Contact Info</button>
+          </div>
+          <div id="socials-container">
+            <img src="./Assets/linkedin.png" alt="My Linkedin Profile" class="icon" onclick="location.href='https://linkedin.com/'">
+            <img src="./Assets/github.png" alt="My Github Profile" class="icon" onclick="location.href='https://github.com/'">
+          </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
